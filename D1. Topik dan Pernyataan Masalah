@@ -1,0 +1,59 @@
+# D1. Topik dan Pernyataan Masalah
+
+## 1.1 Nama Aplikasi
+
+**KantinKu - Sistem Pemesanan Makanan Kantin Kampus**
+
+KantinKu adalah aplikasi pemesanan makanan kantin kampus yang memungkinkan mahasiswa memesan makanan sebelum waktu istirahat. Mahasiswa dapat melihat menu, memeriksa harga dan ketersediaan stok, menentukan jumlah pesanan, serta melihat total harga secara otomatis. Setelah memesan, mahasiswa dapat memilih untuk mengambil makanan langsung di kantin atau meminta pesanan diantar ke kelas. Penjual kantin dapat mengelola menu, memperbarui stok, dan memproses pesanan yang masuk.
+
+## 1.2 Pernyataan Masalah
+
+Mahasiswa sering memiliki waktu istirahat yang terbatas di antara jadwal kuliah. Ketika banyak mahasiswa membeli makanan pada waktu yang sama, antrean kantin dapat menjadi panjang sehingga waktu untuk makan dan beristirahat berkurang. Mahasiswa juga berisiko mendapati menu yang diinginkan sudah habis ketika tiba di kantin.
+
+Penjual kantin harus melayani pelanggan sekaligus memantau pesanan dan ketersediaan stok. Jika pesanan dan stok dikelola secara manual, penjual dapat kesulitan mengatur pesanan yang masuk, terutama ketika kantin sedang ramai. Hal ini dapat menyebabkan kesalahan pencatatan, informasi stok yang tidak akurat, atau pesanan yang tidak dapat dipenuhi.
+
+KantinKu dirancang untuk membantu mengatasi masalah tersebut melalui sistem pemesanan makanan sebelum waktu istirahat. Mahasiswa dapat memesan makanan lebih awal dan memilih metode penerimaan pesanan, yaitu mengambilnya langsung di kantin atau menerima pengantaran ke kelas. Penjual dapat mengelola menu, stok, dan status pesanan melalui satu sistem sehingga proses pemesanan menjadi lebih teratur.
+
+## 1.3 Pengguna dan Aktor
+
+### 1. Mahasiswa
+
+- Melihat daftar menu makanan dan minuman.
+- Memeriksa harga dan ketersediaan stok.
+- Memilih menu dan menentukan jumlah pesanan.
+- Melihat total harga pesanan.
+- Memilih metode penerimaan pesanan, yaitu pengambilan di kantin atau pengantaran ke kelas.
+- Memeriksa status pesanan.
+- Mengambil pesanan di kantin atau menerima pesanan di kelas.
+
+### 2. Penjual Kantin
+
+- Masuk ke dalam aplikasi.
+- Menambahkan dan mengubah informasi menu.
+- Menonaktifkan menu yang tidak tersedia.
+- Memperbarui jumlah stok makanan dan minuman.
+- Melihat dan memproses pesanan yang masuk.
+- Memperbarui status pesanan.
+- Menyiapkan pesanan untuk diambil atau mengantarkannya ke kelas sesuai metode yang dipilih.
+
+## 1.4 Ruang Lingkup Proyek
+
+### Fitur yang Termasuk
+
+1. Autentikasi pengguna dengan peran mahasiswa dan penjual kantin.
+2. Tampilan menu makanan dan minuman beserta harga dan ketersediaan stok.
+3. Pemesanan makanan sebelum waktu istirahat.
+4. Penghitungan total harga pesanan secara otomatis.
+5. Pengelolaan menu dan stok oleh penjual kantin.
+6. Pemilihan metode penerimaan pesanan, yaitu pengambilan di kantin atau pengantaran ke kelas.
+7. Pembaruan status pesanan hingga selesai diterima mahasiswa.
+
+### Fitur yang Tidak Termasuk
+
+1. Pembayaran daring, dompet digital, atau integrasi dengan penyedia pembayaran.
+2. Pengantaran makanan ke luar area kampus.
+3. Pelacakan lokasi pengantar secara langsung.
+4. Pengelolaan pemasok dan pembelian bahan makanan secara otomatis.
+5. Sistem ulasan pelanggan dan rekomendasi menu.
+
+Proyek ini berfokus pada proses utama pemesanan makanan, mulai dari pemilihan menu hingga pesanan diterima mahasiswa melalui metode yang dipilih.
