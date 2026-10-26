@@ -1,0 +1,64 @@
+
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+actor "Mahasiswa" as M
+actor "Penjual Kantin" as P
+
+rectangle "Sistem KantinKu" {
+
+    package "Katalog Menu" {
+        usecase "Melihat Katalog Menu" as UC1
+    }
+
+    package "Pemesanan dan Perhitungan Harga" {
+        usecase "Membuat Pesanan" as UC2
+        usecase "Memilih Menu dan Jumlah" as UC3
+        usecase "Menghitung Total Harga" as UC4
+        usecase "Memilih Metode Pembayaran" as UC5
+        usecase "Memilih Metode Penerimaan" as UC6
+    }
+
+    package "Pengelolaan Stok" {
+        usecase "Memeriksa Ketersediaan Stok" as UC7
+        usecase "Memperbarui Stok" as UC8
+    }
+
+    package "Pemenuhan dan Pelacakan Pesanan" {
+        usecase "Melacak Status Pesanan" as UC9
+        usecase "Melihat Pesanan Masuk" as UC10
+        usecase "Memperbarui Status Pesanan" as UC11
+    }
+}
+
+' Interaksi mahasiswa
+M --> UC1
+M --> UC2
+M --> UC9
+
+' Interaksi penjual kantin
+P --> UC10
+P --> UC11
+
+' Proses yang menjadi bagian dari pemesanan
+UC2 ..> UC3 : <<include>>
+UC2 ..> UC4 : <<include>>
+UC2 ..> UC5 : <<include>>
+UC2 ..> UC6 : <<include>>
+UC2 ..> UC7 : <<include>>
+UC2 ..> UC8 : <<include>>
+
+note right of UC6
+  Pilihan metode penerimaan:
+  - Ambil sendiri di kantin
+  - Diantar ke kelas
+end note
+
+note right of UC8
+  Stok diperbarui setelah
+  pesanan berhasil dicatat.
+end note
+
+@enduml
